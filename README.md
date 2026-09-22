@@ -1,1 +1,1 @@
-# frigy-legal
+# palotta-legal
