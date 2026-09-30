@@ -4,7 +4,7 @@ title: Politique de confidentialité — Palotta
 
 # Politique de confidentialité — Palotta
 
-**Dernière mise à jour : 22 septembre 2026** **Version : 2.0**
+**Dernière mise à jour : 30 septembre 2026** **Version : 2.1**
 
 ---
 
@@ -15,9 +15,10 @@ Palotta est une application de gestion de garde-manger et de listes de courses. 
 - Dès la première ouverture de l'application, un identifiant de compte est créé automatiquement, sans que vous ayez à saisir quoi que ce soit. Cet identifiant n'est associé à aucune information vous identifiant personnellement.
 - Vous pouvez, si vous le souhaitez, rattacher une adresse e-mail à ce compte pour vous reconnecter sur un autre appareil. Aucun mot de passe n'est utilisé : la connexion se fait par un code à 6 chiffres envoyé par e-mail.
 - Votre garde-manger et votre liste de courses sont enregistrés à la fois sur votre appareil et sur nos serveurs (Supabase, hébergés en Suisse), afin de rester disponibles même si vous changez de téléphone ou désinstallez l'application par erreur.
+- Vous pouvez partager votre garde-manger et votre liste de courses avec les membres de votre foyer. Ils voient alors ces données, ainsi que le prénom que vous avez choisi d'afficher ou, à défaut, une version masquée de votre adresse e-mail.
 - Vos recettes et vos préférences alimentaires restent enregistrées uniquement sur votre appareil.
-- Nous ne vendons, ne louons et ne partageons aucune donnée à des fins publicitaires. Palotta ne contient aucun outil de mesure d'audience, de publicité ou de suivi comportemental.
-- Vous pouvez supprimer définitivement votre compte et l'ensemble des données associées directement depuis l'application, à tout moment.
+- Nous ne vendons, ne louons et ne partageons aucune donnée à des fins publicitaires, et Palotta ne contient aucune publicité. Nous mesurons en revanche, de façon pseudonyme, l'utilisation de l'application (écrans et fonctions utilisés) afin de l'améliorer, sans jamais transmettre le contenu de vos listes, de vos tickets ni vos préférences (section 5.4).
+- Vous pouvez supprimer définitivement votre compte et les données associées directement depuis l'application, à tout moment.
 
 Les autres données qui quittent votre appareil sont celles nécessaires à l'analyse d'un ticket de caisse ou à la génération d'une suggestion de recette, au moment précis où vous déclenchez ces actions.
 
@@ -42,13 +43,24 @@ Dès que vous ouvrez l'application pour la première fois, un compte est créé 
 
 ### 3.2 Compte avec adresse e-mail (facultatif)
 
-Vous pouvez, à tout moment, rattacher une adresse e-mail à votre compte. Cette étape est facultative : l'application reste pleinement fonctionnelle sans elle. Elle sert uniquement à vous permettre de retrouver vos données si vous changez de téléphone.
+Vous pouvez, à tout moment, rattacher une adresse e-mail à votre compte. Cette étape est facultative : l'application reste pleinement fonctionnelle sans elle. Elle sert à vous permettre de retrouver vos données si vous changez de téléphone, et elle est nécessaire pour partager un foyer (section 3.4).
 
 La connexion se fait par un code à 6 chiffres envoyé à votre adresse e-mail — nous n'utilisons ni ne stockons aucun mot de passe.
 
 ### 3.3 Suppression de votre compte
 
 Vous pouvez supprimer votre compte à tout moment depuis l'application (section « Mon compte »). Cette action est **immédiate et définitive** : elle supprime votre adresse e-mail (si vous en aviez rattaché une), votre garde-manger, votre liste de courses et l'historique technique de synchronisation, sur nos serveurs comme sur votre appareil. Aucune période de grâce ni de récupération n'est possible après confirmation.
+
+Les mesures d'utilisation pseudonymes décrites à la section 5.4 ne sont pas effacées automatiquement lors de cette suppression : elles sont supprimées automatiquement au bout de 30 jours, ou plus tôt sur simple demande à contact@palotta.ch.
+
+### 3.4 Partage d'un foyer
+
+Vous pouvez partager votre garde-manger et votre liste de courses avec d'autres personnes, réunies dans un « foyer ». Cette fonctionnalité nécessite un compte avec adresse e-mail.
+
+- Pour inviter quelqu'un, vous lui transmettez un code d'invitation, par le moyen de votre choix.
+- Les membres d'un même foyer voient et modifient le même garde-manger et la même liste de courses, et voient le prénom que chacun a choisi d'afficher. Si vous n'avez pas renseigné de prénom, ils voient à la place une version masquée de votre adresse e-mail (seules la première lettre et la fin de l'adresse sont visibles, par exemple « t***@exemple.ch »). Votre adresse e-mail complète ne leur est jamais affichée.
+- En rejoignant un foyer, les articles de votre garde-manger et de votre liste de courses personnels sont regroupés avec ceux du foyer rejoint.
+- En quittant un foyer, vous repartez avec un garde-manger et une liste de courses vides ; les articles restent accessibles aux autres membres.
 
 ---
 
@@ -57,9 +69,10 @@ Vous pouvez supprimer votre compte à tout moment depuis l'application (section 
 ### 4.1 Sur votre appareil et sur nos serveurs
 
 - **le contenu de votre garde-manger** : les articles que vous possédez, leur quantité et leur unité ;
-- **votre liste de courses** : les articles à acheter et leur état.
+- **votre liste de courses** : les articles à acheter et leur état ;
+- **votre prénom d'affichage** : si vous l'avez renseigné, visible des membres de votre foyer (à défaut, ils voient une version masquée de votre adresse e-mail, voir section 3.4).
 
-Ces données sont enregistrées localement pour un accès instantané, même hors connexion, puis synchronisées avec nos serveurs (Supabase, hébergés en Suisse) dès que votre appareil retrouve une connexion réseau. Elles sont associées uniquement à l'identifiant de compte décrit à la section 3, jamais à votre nom ou à votre adresse e-mail directement.
+Ces données sont enregistrées localement pour un accès instantané, même hors connexion, puis synchronisées avec nos serveurs (Supabase, hébergés en Suisse) dès que votre appareil retrouve une connexion réseau. Elles sont associées uniquement à l'identifiant de compte décrit à la section 3, jamais à votre nom ou à votre adresse e-mail directement. Si vous partagez un foyer (section 3.4), votre garde-manger et votre liste de courses sont également visibles et modifiables par ses autres membres.
 
 ### 4.2 Uniquement sur votre appareil
 
@@ -75,7 +88,7 @@ Ces informations peuvent être incluses dans les sauvegardes automatiques de vot
 
 ## 5. Données transmises pour analyse
 
-Trois types de transmission, en plus de la synchronisation décrite à la section 4.1, font sortir des données de votre appareil.
+Quatre types de transmission, en plus de la synchronisation décrite à la section 4.1, font sortir des données de votre appareil.
 
 ### 5.1 Le scan d'un ticket de caisse
 
@@ -101,6 +114,22 @@ Un régime alimentaire peut, dans certains cas, refléter une conviction personn
 ### 5.3 La recherche de mises à jour
 
 À chaque démarrage, l'application interroge automatiquement les serveurs d'Expo pour vérifier l'existence d'une mise à jour. Cette requête transmet des informations techniques (identifiant du projet, version installée, type d'appareil) ainsi que votre adresse IP. Elle ne contient aucune de vos données personnelles ni aucun contenu de l'application.
+
+### 5.4 La mesure d'utilisation de l'application
+
+Afin de comprendre quelles fonctions sont utilisées et de détecter les problèmes (par exemple des scans qui échouent), l'application transmet des mesures d'utilisation à notre prestataire PostHog, dont les serveurs sont situés dans l'Union européenne (Francfort, Allemagne).
+
+**Ce qui est transmis :**
+
+- les écrans que vous ouvrez, ainsi que l'ouverture et la mise en arrière-plan de l'application ;
+- certaines actions, sous forme de simples compteurs : scan d'un ticket réussi ou non et nombre d'articles détectés, demande de suggestions et nombre de recettes proposées, ouverture d'une recette, ajout manuel d'un article, partage d'une invitation ou arrivée dans un foyer, rattachement d'une adresse e-mail ;
+- des informations techniques : version de l'application, type d'appareil et taille de l'écran.
+
+**Ce qui n'est jamais transmis :** votre adresse e-mail, le contenu de vos tickets, le nom de vos articles ou de vos recettes, vos préférences alimentaires, les prénoms des membres de votre foyer, le code d'invitation, ni rien de ce que vous saisissez dans l'application. Aucune géolocalisation n'est effectuée, aucun enregistrement de l'écran n'est réalisé, et votre adresse IP n'est pas conservée.
+
+**Identification :** ces mesures sont rattachées à un identifiant technique aléatoire. Si vous avez rattaché une adresse e-mail, elles sont rattachées à l'identifiant technique de votre compte, jamais à l'adresse e-mail elle-même.
+
+Ces mesures ne servent ni à la publicité ni au profilage commercial, et ne sont jamais revendues. Vous pouvez vous y opposer ou en demander l'effacement en écrivant à contact@palotta.ch.
 
 ---
 
@@ -128,7 +157,8 @@ Nous faisons appel aux prestataires suivants, agissant comme sous-traitants au s
 | **Supabase Inc.**                | Hébergement de votre compte et de vos données de garde-manger/liste de courses | Serveurs en Suisse (Zurich)              |
 | **Anthropic PBC**                | Analyse des tickets et génération des suggestions de recettes  | États-Unis                                |
 | **Render Services, Inc.**        | Hébergement du serveur applicatif                               | États-Unis (société), serveurs en Europe |
-| **Resend**                       | Envoi des e-mails contenant votre code de connexion             | États-Unis                                |
+| **Infomaniak Network SA**        | Envoi des e-mails contenant votre code de connexion             | Suisse                                    |
+| **PostHog Inc.**                 | Mesure d'utilisation de l'application (section 5.4)             | États-Unis (société), serveurs dans l'Union européenne (Allemagne) |
 | **Expo (650 Industries, Inc.)**  | Diffusion des mises à jour de l'application                     | États-Unis                                |
 
 Les données transmises à Anthropic dans le cadre de l'API ne sont pas utilisées pour entraîner ses modèles.
@@ -152,9 +182,10 @@ Les transferts vers les États-Unis impliquent un régime de protection des donn
 Palotta ne contient :
 
 - aucune régie publicitaire ;
-- aucun outil de mesure d'audience ou d'analyse comportementale ;
 - aucun traceur ni cookie publicitaire ;
 - aucun dispositif de profilage ou de décision automatisée produisant des effets juridiques à votre égard.
+
+La seule mesure d'audience est la mesure d'utilisation pseudonyme décrite à la section 5.4, utilisée uniquement pour améliorer l'application.
 
 Aucune donnée n'est vendue, louée ou cédée à des tiers.
 
@@ -169,6 +200,7 @@ Aucune donnée n'est vendue, louée ou cédée à des tiers.
 | Recettes et préférences alimentaires                                     | Jusqu'à désinstallation, sous votre contrôle                            |
 | Image d'un ticket                                                        | Le temps du traitement uniquement, jamais conservée                    |
 | Adresse IP (limitation de débit)                                         | Une heure maximum, en mémoire vive                                     |
+| Mesures d'utilisation (section 5.4)                                      | 30 jours, ou plus tôt sur demande                                       |
 | Journaux techniques                                                      | Selon la politique de rétention de notre hébergeur                     |
 
 ---
@@ -180,9 +212,9 @@ Conformément à la loi fédérale suisse sur la protection des données (nLPD) 
 **En pratique :**
 
 - **Accès et rectification** : vos données de garde-manger et de liste de courses sont visibles et modifiables à tout moment dans l'application.
-- **Effacement** : vous pouvez supprimer votre compte et l'ensemble des données associées directement depuis l'application (section « Mon compte »). Cette action est immédiate et définitive.
+- **Effacement** : vous pouvez supprimer votre compte et l'ensemble des données associées directement depuis l'application (section « Mon compte »). Cette action est immédiate et définitive. Pour l'effacement des mesures d'utilisation (section 5.4), écrivez-nous à contact@palotta.ch.
 - **Portabilité (export de vos données)** : cette fonctionnalité n'est pas encore automatisée dans l'application. Pour recevoir une copie de vos données, écrivez-nous à contact@palotta.ch en précisant l'adresse e-mail associée à votre compte (ou l'identifiant technique si vous n'en avez pas rattaché). Nous vous répondons dans un délai de trente jours.
-- **Opposition** : vous pouvez à tout moment cesser d'utiliser les fonctionnalités reposant sur l'analyse de tickets ou la suggestion de recettes sans que cela affecte le reste de l'application.
+- **Opposition** : vous pouvez à tout moment cesser d'utiliser les fonctionnalités reposant sur l'analyse de tickets ou la suggestion de recettes sans que cela affecte le reste de l'application. Vous pouvez également vous opposer à la mesure d'utilisation de l'application (section 5.4) en écrivant à contact@palotta.ch.
 
 Si vous estimez que le traitement de vos données n'est pas conforme, vous pouvez saisir le Préposé fédéral à la protection des données et à la transparence (PFPDT), Feldeggweg 1, 3003 Berne, Suisse. Si vous résidez dans l'Union européenne, vous pouvez saisir l'autorité de contrôle de votre pays de résidence.
 
@@ -190,7 +222,7 @@ Si vous estimez que le traitement de vos données n'est pas conforme, vous pouve
 
 ## 12. Sécurité
 
-Les échanges entre l'application et nos serveurs sont chiffrés (HTTPS). L'accès à votre compte et à vos données est protégé par un code de connexion à usage unique valable une durée limitée — nous n'utilisons aucun mot de passe, qui ne peut donc pas être volé ou deviné. Une règle de sécurité au niveau de la base de données (Row Level Security) garantit que personne ne peut consulter les données d'un autre compte que le sien, y compris en cas de faille applicative.
+Les échanges entre l'application et nos serveurs sont chiffrés (HTTPS). L'accès à votre compte et à vos données est protégé par un code de connexion à usage unique valable une durée limitée — nous n'utilisons aucun mot de passe, qui ne peut donc pas être volé ou deviné. Une règle de sécurité au niveau de la base de données (Row Level Security) garantit que personne ne peut consulter les données d'un autre compte que le sien, ou d'un foyer dont il n'est pas membre, y compris en cas de faille applicative.
 
 Aucune transmission sur internet ne pouvant être garantie totalement sûre, nous nous engageons à mettre en œuvre des mesures proportionnées au regard des données concernées.
 
@@ -204,9 +236,11 @@ Palotta n'est pas destinée spécifiquement aux enfants et ne collecte sciemment
 
 ## 14. Modifications de cette politique
 
-Cette politique a évolué le 22 septembre 2026 pour refléter l'introduction d'un compte utilisateur et de la synchronisation de vos données de garde-manger et de liste de courses. Une version antérieure de ce document indiquait qu'aucune donnée n'était stockée sur nos serveurs : cette affirmation ne reflétait plus la réalité depuis l'introduction de la synchronisation, et a été corrigée à cette occasion.
+Cette politique a été mise à jour le 30 septembre 2026 pour décrire le partage d'un foyer (section 3.4) et la mesure d'utilisation de l'application (section 5.4), et pour refléter le changement de prestataire d'envoi des e-mails (Infomaniak remplace Resend).
 
-Cette politique pourra encore évoluer, notamment lors de l'introduction du partage de listes entre plusieurs personnes. Toute modification substantielle fera l'objet d'une nouvelle mise à jour de ce document et d'une information dans l'application.
+Elle avait auparavant évolué le 22 septembre 2026 pour refléter l'introduction d'un compte utilisateur et de la synchronisation de vos données de garde-manger et de liste de courses. Une version antérieure de ce document indiquait qu'aucune donnée n'était stockée sur nos serveurs : cette affirmation ne reflétait plus la réalité depuis l'introduction de la synchronisation, et a été corrigée à cette occasion.
+
+Cette politique pourra encore évoluer. Toute modification substantielle fera l'objet d'une nouvelle mise à jour de ce document et d'une information dans l'application.
 
 La date de dernière mise à jour figure en tête de ce document.
 
